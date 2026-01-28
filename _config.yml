@@ -59,32 +59,34 @@ content:
       - layout: left
         title: DGIST (Daegu Gyeongbuk Institute of Science and Technology)
         sub_title: Integrated B.S.–M.S.–Ph.D. Program
-        caption: 202X - Present
+        caption: 2023 - Present
         description: | 
-          Research focus: ROS 2, DDS middleware, and networking for robotic systems.
+          Research focus: ROS2, middleware, and Wireless network for robotic systems.
 
   - title: News
     layout: list
     content:
       - layout: left
-        title: Joined Integrated B.S.–M.S.–Ph.D. Program at DGIST
-        caption: YYYY-MM
-        description: |
-          Brief summary of the update (1–2 lines).
+        title: Merit Award, Undergraduate Group Research Program (UGRP)
+        caption: 2026-01
+        description: | 
+          Received the Merit Award in the Undergraduate Group Research Program (UGRP) for the project "Development of a Personality Assessment Method Using Thermal Perception EEG,"
 
       - layout: left
-        title: Paper accepted / Poster presented at <Conference Name>
-        caption: YYYY-MM
+        title: Joined Integrated B.S.–M.S.–Ph.D. Program at DGIST
+        caption: 2026-01
         description: |
-          Brief summary (e.g., topic, contribution, link).
+          I have started my Integrated B.S.–M.S.–Ph.D. Program in EECS, DGIST
+
+
 
   - title: Publications
     layout: list
     content:
       - layout: left
-        title: "Paper Title"
-        sub_title: Conference / Journal Name
-        caption: YYYY
+        title: "Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks"
+        sub_title: under review
+        caption: 2026
         link: https://example.com
         description: |
           One-paragraph summary: problem, method, and key result.
