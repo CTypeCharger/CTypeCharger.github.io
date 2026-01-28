@@ -22,7 +22,7 @@ github_username:  CTypeCharger
 # facebook_username: jekyll
 # flickr_username: jekyll
 instagram_username: chlaaanoeydn_36
-linkedin_username: YeonwooChoi
+linkedin_username: 
 # xing_username: jekyll
 # pinterest_username: jekyll
 #youtube_username: globalmtb
@@ -48,7 +48,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Yeonwoo Choi and I am an integrated B.S.–M.S.–Ph.D. student at DGIST, focusing on ROS 2, middleware, and networked robotic systems.
+  Hi, my name's Yeonwoo Choi and I am an integrated B.S.–M.S.–Ph.D. student at DGIST(Daegu Gyeongbuk Institute of Science and Technology), South Korea, focusing on ROS 2, middleware, and networked robotic systems.
 
   I am most skilled in: <mark>ROS2</mark> and <mark>DDS</mark>
 
@@ -57,7 +57,7 @@ content:
     layout: list
     content:
       - layout: left
-        title: DGIST (Daegu Gyeongbuk Institute of Science and Technology)
+        title: DGIST
         sub_title: Integrated B.S.–M.S.–Ph.D. Program
         caption: 2023 - Present
         description: | 
@@ -104,19 +104,15 @@ content:
     layout: list
     content:
       - layout: top-middle
-        title: ROS 2 Middleware/Networking Benchmarking
+        title: Commiong soon
         link: https://github.com/CTypeCharger
-        additional_links:
-          - title: GitHub Repository
-            icon: fab fa-github
-            url: https://github.com/CTypeCharger
+        # additional_links:
+          #- title: GitHub Repository
+          #  icon: fab fa-github
+          #  url: https://github.com/CTypeCharger
         description: |
-          Designed and ran experiments to analyze end-to-end performance and overhead in ROS 2 middleware and wireless networking.
-
-      - layout: top-middle
-        title: EEG-based Personality Classification (Thermal Stimulus)
-        description: |
-          Built ML/DL baselines using EEG features under thermal stimulation protocols (QST/VAS/PDS) and evaluated classification performance.
+         Commiong soon
+.
 
 # Footer
 footer_show_references: true
