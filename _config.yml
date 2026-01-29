@@ -83,14 +83,14 @@ content:
   - title: Publications
     layout: list
     content:
-      - layout: left
+      - layout: top-middle  # 이 부분을 'left'에서 'top-middle'로 변경하세요.
         title: "Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks"
         sub_title: under review
         caption: 2026
         link: https://example.com
         description: |
-          Comming soon.
-
+          Coming soon.
+          
       # 여러 편이면 아래처럼 추가
       # - layout: left
       #   title: "Another Paper Title"
