@@ -100,20 +100,46 @@ content:
       #   description: |
       #     Summary.
 
-  - title: Projects
+- title: Awards
     layout: list
     content:
-      - layout: top-middle
-        title: Commiong soon
-        link: https://github.com/CTypeCharger
-        # additional_links:
-          #- title: GitHub Repository
-          #  icon: fab fa-github
-          #  url: https://github.com/CTypeCharger
+      - layout: left
+        title: Merit Award
+        sub_title: Undergraduate Group Research Program (UGRP), DGIST
+        caption: Jan 2026
         description: |
-         Commiong soon
+          Completed the year-long research project on EEG data acquisition and machine learning-based classification.
 
+      - layout: left
+        title: Encouragement Award
+        sub_title: 2025 Brain Engineering Society of Korea Summer Workshop
+        caption: Jul 2025
+        description: |
+          Presented a poster on EEG-based brainwave experiment and data preprocessing.
 
+  - title: Experience
+      layout: list
+      content:
+        - layout: left
+          title: CSI Lab, DGIST
+          sub_title: Undergraduate Researcher
+          caption: May 2025 - Present
+          description: |
+            Engaged in research on the network analysis and optimization of **ROS2 and DDS middleware**. [cite: 8]
+        - layout: left
+          title: DGIST (UGRP)
+          sub_title: Undergraduate Group Research Program
+          caption: Mar 2025 - Present
+          description: |
+            - Conducted EEG-based brainwave experiments and data acquisition. [cite: 8]
+            - Developed machine learning models for EEG data preprocessing and classification. [cite: 8]
+            - Presented posters at the **Brain Engineering Society of Korea** and **WEEF & GEDC 2025**. [cite: 8]
+        - layout: left
+          title: BRAIN Lab, DGIST
+          sub_title: Undergraduate Researcher
+          caption: Feb 2025 - Dec 2025
+          description: |
+            Provided research assistance by developing MATLAB scripts for data collection and analysis. [cite: 8]
 # Footer
 footer_show_references: true
 # references_title: References on request (Override references text)
