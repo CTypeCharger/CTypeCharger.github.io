@@ -9,46 +9,19 @@ version: 2
 name: Yeonwoo Choi
 title: DGIST Integrated B.S.-M.S.-Ph.D.
 email: cyw040306@dgist.ac.kr
-Linkedin: https://www.linkedin.com/in/yeonwoo-choi-48b6a72b5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+Linkedin: https://www.linkedin.com/in/yeonwoo-choi-48b6a72b5
 
 # Dark Mode (true/false/never)
 darkmode: true
 
 # Social links
-#twitter_username: facespics
-github_username:  CTypeCharger
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
+github_username: CTypeCharger
 instagram_username: chlaaanoeydn_36
-linkedin_username: 
-# xing_username: jekyll
-# pinterest_username: jekyll
-#youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
-
-# Additional icon links
-additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Yeonwoo Choi and I am an integrated B.S.–M.S.–Ph.D. student at DGIST(Daegu Gyeongbuk Institute of Science and Technology), South Korea, focusing on ROS 2, middleware, and networked robotic systems.
+about_content: |
+  Hi, my name's Yeonwoo Choi and I am an integrated B.S.–M.S.–Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Science and Technology), South Korea, focusing on ROS 2, middleware, and networked robotic systems.
 
   I am most skilled in: <mark>ROS2</mark> and <mark>DDS</mark>
 
@@ -61,7 +34,7 @@ content:
         sub_title: Integrated B.S.–M.S.–Ph.D. Program
         caption: 2023 - Present
         description: | 
-          Research focus: ROS2, middleware, and Wireless network for robotic systems.
+          Research focus: ROS2, middleware, and wireless network for robotic systems.
 
   - title: News
     layout: list
@@ -70,37 +43,25 @@ content:
         title: Merit Award, Undergraduate Group Research Program (UGRP)
         caption: 2026-01
         description: | 
-          Received the Merit Award in the Undergraduate Group Research Program (UGRP) for the project "Development of a Personality Assessment Method Using Thermal Perception EEG,"
-
+          Received the Merit Award in the Undergraduate Group Research Program (UGRP) for the project "Development of a Personality Assessment Method Using Thermal Perception EEG."
       - layout: left
         title: Joined Integrated B.S.–M.S.–Ph.D. Program at DGIST
         caption: 2026-01
         description: |
-          I have started my Integrated B.S.–M.S.–Ph.D. Program in EECS, DGIST
-
-
+          Started the Integrated B.S.–M.S.–Ph.D. Program in EECS, DGIST.
 
   - title: Publications
     layout: list
     content:
-      - layout: top-middle  # 이 부분을 'left'에서 'top-middle'로 변경하세요.
+      - layout: top-middle
         title: "Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks"
         sub_title: under review
         caption: 2026
         link: https://example.com
         description: |
           Coming soon.
-          
-      # 여러 편이면 아래처럼 추가
-      # - layout: left
-      #   title: "Another Paper Title"
-      #   sub_title: Conference / Journal
-      #   caption: YYYY
-      #   link: https://example.com
-      #   description: |
-      #     Summary.
 
-- title: Awards
+  - title: Awards
     layout: list
     content:
       - layout: left
@@ -108,41 +69,40 @@ content:
         sub_title: Undergraduate Group Research Program (UGRP), DGIST
         caption: Jan 2026
         description: |
-          Completed the year-long research project on EEG data acquisition and machine learning-based classification.
-
+          Completed a year-long research project on EEG data acquisition and machine learning-based classification.
       - layout: left
         title: Encouragement Award
         sub_title: 2025 Brain Engineering Society of Korea Summer Workshop
         caption: Jul 2025
         description: |
-          Presented a poster on EEG-based brainwave experiment and data preprocessing.
+          Presented a poster on EEG-based brainwave experiments and data preprocessing.
 
   - title: Experience
-      layout: list
-      content:
-        - layout: left
-          title: CSI Lab, DGIST
-          sub_title: Undergraduate Researcher
-          caption: May 2025 - Present
-          description: |
-            Engaged in research on the network analysis and optimization of **ROS2 and DDS middleware**. [cite: 8]
-        - layout: left
-          title: DGIST (UGRP)
-          sub_title: Undergraduate Group Research Program
-          caption: Mar 2025 - Present
-          description: |
-            - Conducted EEG-based brainwave experiments and data acquisition. [cite: 8]
-            - Developed machine learning models for EEG data preprocessing and classification. [cite: 8]
-            - Presented posters at the **Brain Engineering Society of Korea** and **WEEF & GEDC 2025**. [cite: 8]
-        - layout: left
-          title: BRAIN Lab, DGIST
-          sub_title: Undergraduate Researcher
-          caption: Feb 2025 - Dec 2025
-          description: |
-            Provided research assistance by developing MATLAB scripts for data collection and analysis. [cite: 8]
+    layout: list
+    content:
+      - layout: left
+        title: CSI Lab, DGIST
+        sub_title: Undergraduate Researcher
+        caption: May 2025 - Present
+        description: |
+          Researched network analysis and optimization of ROS2 and DDS middleware. 
+      - layout: left
+        title: DGIST (UGRP)
+        sub_title: Undergraduate Group Research Program
+        caption: Mar 2025 - Present
+        description: |
+          - Conducted EEG-based brainwave experiments and data acquisition. 
+          - Developed machine learning models for EEG data preprocessing and classification. 
+          - Presented posters at the Brain Engineering Society of Korea and WEEF & GEDC 2025. 
+      - layout: left
+        title: BRAIN Lab, DGIST
+        sub_title: Undergraduate Researcher
+        caption: Feb 2025 - Dec 2025
+        description: |
+          Provided research assistance by developing MATLAB scripts for data collection and analysis. 
+
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
 
 # Build settings
 remote_theme: sproogen/resume-theme
