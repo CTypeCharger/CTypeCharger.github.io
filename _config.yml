@@ -62,44 +62,35 @@ content:
           Coming soon.
 
   - title: Awards
-    layout: list
-    content:
-      - layout: left
-        title: Merit Award
-        sub_title: Undergraduate Group Research Program (UGRP), DGIST
-        caption: Jan 2026
-        description: |
-          Completed a year-long research project on EEG data acquisition and machine learning-based classification.
-      - layout: left
-        title: Encouragement Award
-        sub_title: 2025 Brain Engineering Society of Korea Summer Workshop
-        caption: Jul 2025
-        description: |
-          Presented a poster on EEG-based brainwave experiments and data preprocessing.
+      layout: list
+      content:
+        - layout: left
+          title: Merit Award
+          [cite_start]sub_title: Undergraduate Group Research Program (UGRP), DGIST [cite: 8]
+          caption: Jan 2026
 
-  - title: Experience
+        - layout: left
+          title: Encouragement Award
+          [cite_start]sub_title: 2025 Brain Engineering Society of Korea Summer Workshop [cite: 26]
+          caption: Jul 2025
+
+  - title: Research Experience
     layout: list
     content:
       - layout: left
-        title: CSI Lab, DGIST
-        sub_title: Undergraduate Researcher
+        [cite_start]title: CSI Lab, DGIST [cite: 8]
+        [cite_start]sub_title: Undergraduate Researcher [cite: 8]
         caption: May 2025 - Present
-        description: |
-          Researched network analysis and optimization of ROS2 and DDS middleware. 
+
       - layout: left
-        title: DGIST (UGRP)
-        sub_title: Undergraduate Group Research Program
+        [cite_start]title: DGIST (UGRP) [cite: 8, 23]
+        [cite_start]sub_title: Undergraduate Group Research Program [cite: 8]
         caption: Mar 2025 - Present
-        description: |
-          - Conducted EEG-based brainwave experiments and data acquisition. 
-          - Developed machine learning models for EEG data preprocessing and classification. 
-          - Presented posters at the Brain Engineering Society of Korea and WEEF & GEDC 2025. 
+
       - layout: left
-        title: BRAIN Lab, DGIST
-        sub_title: Undergraduate Researcher
+        [cite_start]title: BRAIN Lab, DGIST [cite: 8]
+        [cite_start]sub_title: Undergraduate Researcher [cite: 8]
         caption: Feb 2025 - Dec 2025
-        description: |
-          Provided research assistance by developing MATLAB scripts for data collection and analysis. 
 
 # Footer
 footer_show_references: true
