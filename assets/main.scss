@@ -2,4 +2,28 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+// 1. 쿨톤 색상 변수 정의 (테마를 불러오기 전에 선언해야 적용됩니다)
+$background-color: #ffffff;      // 깨끗한 화이트 배경
+$text-color: #1f2937;            // 차가운 다크 그레이 텍스트
+$primary-color: #2563eb;         // 신뢰감을 주는 블루 (포인트 색상)
+$link-color: #3b82f6;            // 링크 색상 (밝은 블루)
+$border-color: #e5e7eb;          // 구분선 (차분한 그레이)
+$mark-bg-color: #dbeafe;         // <mark> 태그 배경 (연한 하늘색)
+$mark-text-color: #1e40af;       // <mark> 태그 글자색 (진한 파란색)
+
+// 2. 테마 불러오기
 @import 'modern-resume-theme';
+
+// 3. 추가적인 스타일 미세 조정 (선택 사항)
+body {
+    background-color: $background-color;
+    color: $text-color;
+}
+
+// 강조색(Mark)을 노란색에서 파란색 계열로 강제 변경
+mark {
+    background-color: $mark-bg-color !important;
+    color: $mark-text-color !important;
+    border-radius: 3px;
+    padding: 0 4px;
+}
