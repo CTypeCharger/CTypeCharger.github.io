@@ -3,3 +3,12 @@
 ---
 
 @import 'modern-resume-theme';
+/* Hide empty right column in layout-left items */
+.list-container .layout-left .details:empty {
+  display: none;
+}
+
+/* If the theme uses flex for layout-left, prevent empty space */
+.list-container .layout-left {
+  gap: 0.5rem;
+}
