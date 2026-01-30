@@ -3,12 +3,13 @@
 ---
 
 @import 'modern-resume-theme';
-/* Hide empty right column in layout-left items */
-.list-container .layout-left .details:empty {
-  display: none;
+
+/* layout-left에서 오른쪽 칼럼(.content)이 "실제 요소"를 하나도 갖지 않으면 숨김 */
+.list-container .layout-left:has(.content:not(:has(*))) .content {
+  display: none !important;
 }
 
-/* If the theme uses flex for layout-left, prevent empty space */
-.list-container .layout-left {
-  gap: 0.5rem;
+/* 오른쪽 칼럼이 숨겨진 경우, 왼쪽 칼럼이 전체폭을 쓰도록 */
+.list-container .layout-left:has(.content:not(:has(*))) {
+  display: block !important;
 }
