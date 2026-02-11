@@ -64,26 +64,28 @@ content:
   - title: Awards
     layout: list
     content:
-      - layout: left
+      - layout: top-middle
         title: Merit Award
         sub_title: Undergraduate Group Research Program (UGRP), DGIST
         caption: Jan 2026
-      - layout: left
+
+      - layout: top-middle
         title: Encouragement Award
         sub_title: 2025 Brain Engineering Society of Korea Summer Workshop
         caption: Jul 2025
+        
   - title: Research Experience
     layout: list
     content:
-      - layout: left
+      - layout: top_middle
         title: CSI Lab, DGIST
         sub_title: Undergraduate Researcher
         caption: May 2025 - Present
-      - layout: left
+      - layout: top-middle
         title: DGIST (UGRP)
         sub_title: Undergraduate Group Research Program
         caption: Mar 2025 - Present
-      - layout: left
+      - layout: top-middle
         title: BRAIN Lab, DGIST
         sub_title: Undergraduate Researcher
         caption: Feb 2025 - Dec 2025
