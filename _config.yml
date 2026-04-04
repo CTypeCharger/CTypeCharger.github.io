@@ -31,9 +31,15 @@ content:
     content:
       - layout: left
         title: DGIST
+        sub_title: School of Undergraduate Studies
+        caption: Feb 2023 – Present
+        description: |
+          Majoring in Computer Science.
+      - layout: left
+        title: DGIST
         sub_title: Integrated B.S.–M.S.–Ph.D. Program
-        caption: 2023 - Present
-        description: | 
+        caption: Jan 2026 – Present
+        description: |
           Research focus: ROS2, middleware, and wireless network for robotic systems.
 
   - title: News
