@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: Yeonwoo Choi
-title: DGIST Integrated B.S.-M.S.-Ph.D.
+title: DGIST Combined UG–G (Integrated B.S.–M.S.–Ph.D.)
 email: cyw040306@dgist.ac.kr
 Linkedin: https://www.linkedin.com/in/yeonwoo-choi-48b6a72b5
 
@@ -21,7 +21,7 @@ instagram_username: chlaaanoeydn_36
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  Hi, my name's Yeonwoo Choi and I am an integrated B.S.–M.S.–Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Science and Technology), South Korea, focusing on ROS 2, middleware, and networked robotic systems.
+  Hi, my name's Yeonwoo Choi and I am a Combined UG–G (Integrated B.S.–M.S.–Ph.D.) student at DGIST (Daegu Gyeongbuk Institute of Science and Technology), South Korea, focusing on ROS 2, middleware, and networked robotic systems.
 
   I am most skilled in: <mark>ROS2</mark> and <mark>DDS</mark>
 
@@ -29,18 +29,20 @@ content:
   - title: Education
     layout: list
     content:
+
+      - layout: left
+        title: DGIST
+        sub_title: Combined UG–G
+        caption: Jan 2026 – Present
+        description: |
+          Research focus: ROS2, middleware, and wireless network for robotic systems.
+
       - layout: left
         title: DGIST
         sub_title: School of Undergraduate Studies
         caption: Feb 2023 – Present
         description: |
           Majoring in Computer Science.
-      - layout: left
-        title: DGIST
-        sub_title: Integrated B.S.–M.S.–Ph.D. Program
-        caption: Jan 2026 – Present
-        description: |
-          Research focus: ROS2, middleware, and wireless network for robotic systems.
 
   - title: News
     layout: list
@@ -48,15 +50,15 @@ content:
       - layout: left
         title: Merit Award
         sub_title: Undergraduate Group Research Program (UGRP)
-        caption: 2026-01
+        caption: Jan 2026
         description: | 
           Received the Merit Award in the Undergraduate Group Research Program (UGRP) for the project "Development of a Personality Assessment Method Using Thermal Perception EEG."
       - layout: left
         title: Program Entry
-        sub_title: DGIST Integrated B.S.–M.S.–Ph.D. Program
-        caption: 2026-01
+        sub_title: Combined UG–G
+        caption: Jan 2026
         description: |
-          Started the Integrated B.S.–M.S.–Ph.D. Program in EECS, DGIST.
+          Started the Combined UG–G in EECS, DGIST.
 
   - title: Publications
     layout: list
@@ -99,7 +101,7 @@ content:
       - layout: top-middle
         title: BRAIN Lab, DGIST
         sub_title: Undergraduate Researcher
-        caption: Feb 2025 - Dec 2025
+        caption: Dec 2024 - Feb 2025
 
 # Footer
 footer_show_references: true
