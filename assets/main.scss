@@ -78,9 +78,10 @@ html {
   margin-bottom: 0.35rem;
 }
 
+/* 본문과 같은 톤에서 살짝만 밝게 — 링크색처럼 보이지 않게 */
 .list-container h3#publications ~ .layout-left .publication-authors strong {
-  color: #4a90e2;
-  font-weight: 700;
+  color: #d6d6d6;
+  font-weight: 600;
 }
 
 .list-container h3#publications ~ .layout-left .publication-meta {
