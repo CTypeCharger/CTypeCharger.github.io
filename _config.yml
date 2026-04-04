@@ -1,21 +1,28 @@
+# Site
 repository: sproogen/resume-theme
 favicon: images/favicon.ico
 
+# Content configuration version
 version: 2
 
+# Personal info
 name: Yeonwoo Choi
 title: DGIST Integrated B.S.-M.S.-Ph.D.
 email: cyw040306@dgist.ac.kr
-linkedin: https://www.linkedin.com/in/yeonwoo-choi-48b6a72b5
+Linkedin: https://www.linkedin.com/in/yeonwoo-choi-48b6a72b5
 
+# Dark Mode (true/false/never)
 darkmode: true
 
+# Social links
 github_username: CTypeCharger
 instagram_username: chlaaanoeydn_36
 
+# About Section
 about_profile_image: images/profile.jpg
 about_content: |
   Hi, my name's Yeonwoo Choi and I am an integrated B.S.–M.S.–Ph.D. student at DGIST (Daegu Gyeongbuk Institute of Science and Technology), South Korea, focusing on ROS 2, middleware, and networked robotic systems.
+
   I am most skilled in: <mark>ROS2</mark> and <mark>DDS</mark>
 
 content:
@@ -26,7 +33,7 @@ content:
         title: DGIST
         sub_title: Integrated B.S.–M.S.–Ph.D. Program
         caption: 2023 - Present
-        description: |
+        description: | 
           Research focus: ROS2, middleware, and wireless network for robotic systems.
 
   - title: News
@@ -35,7 +42,7 @@ content:
       - layout: left
         title: Merit Award, Undergraduate Group Research Program (UGRP)
         caption: 2026-01
-        description: |
+        description: | 
           Received the Merit Award in the Undergraduate Group Research Program (UGRP) for the project "Development of a Personality Assessment Method Using Thermal Perception EEG."
       - layout: left
         title: Joined Integrated B.S.–M.S.–Ph.D. Program at DGIST
@@ -50,10 +57,10 @@ content:
         title: "Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks"
         sub_title: IEEE INFOCOM 2026 Workshop (NetRobiCS) · Accepted
         caption: 2026
+        link: https://netrobics2026.nws.cs.unibo.it/
+        link_text: Paper Link
         description: |
-          <span style='color:#4a9eda; font-weight:bold;'>Sanghoon Lee</span>, <strong>Yeonwoo Choi</strong>, Jiyeong Chae, and Kyung-Joon Park
-
-          <em>Coming soon.</em>
+          Sanghoon Lee, **Yeonwoo Choi**, Jiyeong Chae, and Kyung-Joon Park
 
   - title: Awards
     layout: list
@@ -62,15 +69,16 @@ content:
         title: Merit Award
         sub_title: Undergraduate Group Research Program (UGRP), DGIST
         caption: Jan 2026
+
       - layout: top-middle
         title: Encouragement Award
         sub_title: 2025 Brain Engineering Society of Korea Summer Workshop
         caption: Jul 2025
-
+        
   - title: Research Experience
     layout: list
     content:
-      - layout: top-middle
+      - layout: top_middle
         title: CSI Lab, DGIST
         sub_title: Undergraduate Researcher
         caption: May 2025 - Present
@@ -83,8 +91,10 @@ content:
         sub_title: Undergraduate Researcher
         caption: Feb 2025 - Dec 2025
 
+# Footer
 footer_show_references: true
 
+# Build settings
 remote_theme: sproogen/resume-theme
 
 sass:
@@ -92,4 +102,4 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-seo-tag
+ - jekyll-seo-tag
