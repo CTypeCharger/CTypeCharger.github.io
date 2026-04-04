@@ -50,17 +50,15 @@ content:
         description: |
           Started the Integrated B.S.–M.S.–Ph.D. Program in EECS, DGIST.
 
-  - title: Publications
+- title: Publications
     layout: list
     content:
       - layout: top-middle
         title: "Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks"
-        sub_title: IEEE INFOCOM 2026 Workshop (NetRobiCS) · Accepted
-        caption: 2026
-        link: https://netrobics2026.nws.cs.unibo.it/
-        link_text: Paper Link
         description: |
-          Sanghoon Lee, **Yeonwoo Choi**, Jiyeong Chae, and Kyung-Joon Park
+          <span style="color:#4a9eda; font-weight:bold;">Sanghoon Lee</span>, <strong>Yeonwoo Choi</strong>, Jiyeong Chae, and Kyung-Joon Park†
+
+          <em>IEEE INFOCOM 2026 Workshop (NetRobiCS), Accepted</em>
 
   - title: Awards
     layout: list
