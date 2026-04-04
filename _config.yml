@@ -53,14 +53,16 @@ content:
   - title: Publications
     layout: list
     content:
-      - layout: top-middle
-        title: "Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks"
-        sub_title: IEEE INFOCOM 2026 Workshop (NetRobiCS) · Accepted
-        caption: 2026
-        link: https://netrobics2026.nws.cs.unibo.it/
-        link_text: Paper Link
+      - layout: left
+        title: Conference
         description: |
-          Sanghoon Lee, **Yeonwoo Choi**, Jiyeong Chae, and Kyung-Joon Park
+          <div class="publication-entry">
+            <p class="publication-title">
+              <a href="https://netrobics2026.nws.cs.unibo.it/">Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks</a>
+            </p>
+            <p class="publication-authors">Sanghoon Lee, <strong>Yeonwoo Choi</strong>, Jiyeong Chae, and Kyung-Joon Park</p>
+            <p class="publication-meta"><em>IEEE INFOCOM 2026 Workshop (NetRobiCS), 2026 Accepted</em></p>
+          </div>
 
   - title: Awards
     layout: list

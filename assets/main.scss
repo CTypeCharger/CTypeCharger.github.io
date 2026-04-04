@@ -13,3 +13,91 @@
 .list-container .layout-left:has(.content:not(:has(*))) {
   display: block !important;
 }
+
+/* Publications 섹션을 논문 목록처럼 보이도록 재배치 */
+.list-container h3#publications ~ .layout-left {
+  align-items: flex-start;
+  gap: 2.4rem;
+  margin-top: 2.2rem;
+}
+
+.list-container h3#publications ~ .layout-left .details {
+  flex: 0 0 110px;
+  justify-content: flex-start;
+  margin-bottom: 0;
+  padding-top: 0.2rem;
+}
+
+.list-container h3#publications ~ .layout-left .details h4 {
+  color: #8f8f8f;
+  font-size: 1.35rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.list-container h3#publications ~ .layout-left .content {
+  flex: 1 1 auto;
+}
+
+.list-container h3#publications ~ .layout-left .publication-entry p {
+  margin: 0;
+}
+
+.list-container h3#publications ~ .layout-left .publication-title {
+  font-size: 2.35rem;
+  font-weight: 400;
+  line-height: 1.35;
+  margin-bottom: 0.45rem;
+}
+
+.list-container h3#publications ~ .layout-left .publication-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.list-container h3#publications ~ .layout-left .publication-title a:hover {
+  text-decoration: underline;
+}
+
+.list-container h3#publications ~ .layout-left .publication-authors {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.35rem;
+}
+
+.list-container h3#publications ~ .layout-left .publication-authors strong {
+  color: #4a90e2;
+  font-weight: 700;
+}
+
+.list-container h3#publications ~ .layout-left .publication-meta {
+  color: #9a9a9a;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .list-container h3#publications ~ .layout-left {
+    gap: 0.8rem;
+    margin-top: 1.8rem;
+  }
+
+  .list-container h3#publications ~ .layout-left .details {
+    flex: none;
+    padding-top: 0;
+  }
+
+  .list-container h3#publications ~ .layout-left .details h4 {
+    font-size: 1.5rem;
+  }
+
+  .list-container h3#publications ~ .layout-left .publication-title {
+    font-size: 2rem;
+  }
+
+  .list-container h3#publications ~ .layout-left .publication-authors,
+  .list-container h3#publications ~ .layout-left .publication-meta {
+    font-size: 1.6rem;
+  }
+}
