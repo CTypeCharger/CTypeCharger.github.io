@@ -82,7 +82,7 @@ content:
   - title: Research Experience
     layout: list
     content:
-      - layout: top_middle
+      - layout: top-middle
         title: CSI Lab, DGIST
         sub_title: Undergraduate Researcher
         caption: May 2025 - Present

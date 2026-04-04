@@ -5,7 +5,7 @@
 @import 'modern-resume-theme';
 
 html {
-  font-size: 90%;
+  font-size: 75%;
 }
 
 /* layout-left에서 오른쪽 칼럼(.content)이 "실제 요소"를 하나도 갖지 않으면 숨김 */
@@ -34,7 +34,7 @@ html {
 
 .list-container h3#publications ~ .layout-left .details h4 {
   color: #8f8f8f;
-  font-size: 1.35rem;
+  font-size: 1.7rem;
   font-weight: 300;
   letter-spacing: 0.02em;
   margin: 0;
@@ -102,7 +102,7 @@ html {
   }
 
   .list-container h3#publications ~ .layout-left .details h4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .list-container h3#publications ~ .layout-left .publication-title {
