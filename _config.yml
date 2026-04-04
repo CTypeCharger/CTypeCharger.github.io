@@ -40,12 +40,14 @@ content:
     layout: list
     content:
       - layout: left
-        title: Merit Award, Undergraduate Group Research Program (UGRP)
+        title: Merit Award
+        sub_title: Undergraduate Group Research Program (UGRP)
         caption: 2026-01
         description: | 
           Received the Merit Award in the Undergraduate Group Research Program (UGRP) for the project "Development of a Personality Assessment Method Using Thermal Perception EEG."
       - layout: left
-        title: Joined Integrated B.S.–M.S.–Ph.D. Program at DGIST
+        title: Program Entry
+        sub_title: DGIST Integrated B.S.–M.S.–Ph.D. Program
         caption: 2026-01
         description: |
           Started the Integrated B.S.–M.S.–Ph.D. Program in EECS, DGIST.
