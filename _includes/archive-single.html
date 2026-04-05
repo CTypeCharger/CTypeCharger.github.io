@@ -27,8 +27,17 @@
     {% endif %}
 
     {% if post.collection == 'awards' and post.award_image %}
+      {% capture award_thumb_src %}{{ post.award_image | replace: ' ', '%20' | prepend: '/images/' | prepend: base_path }}{% endcapture %}
+      {% if post.award_image_full %}
+        {% capture award_lightbox_src %}{{ post.award_image_full | replace: ' ', '%20' | prepend: '/images/' | prepend: base_path }}{% endcapture %}
+      {% else %}
+        {% assign award_lightbox_src = award_thumb_src %}
+      {% endif %}
+      {% assign award_alt = post.award_image_alt | default: post.title %}
       <div class="archive__award-thumb">
-        <img src="{{ post.award_image | replace: ' ', '%20' | prepend: '/images/' | prepend: base_path }}" alt="{{ post.award_image_alt | default: post.title }}" loading="lazy" decoding="async" />
+        <button type="button" class="archive__award-thumb-btn award-lightbox-trigger" data-lightbox-src="{{ award_lightbox_src }}" data-lightbox-alt="{{ award_alt | xml_escape }}" aria-label="Enlarge award image: {{ post.title | xml_escape }}">
+          <img src="{{ award_thumb_src }}" alt="{{ award_alt | xml_escape }}" loading="lazy" decoding="async" />
+        </button>
       </div>
       <div class="archive__award-body">
     {% endif %}

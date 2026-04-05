@@ -78,12 +78,32 @@
       width: 4.25rem;
     }
 
+    .archive__award-thumb-btn {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: zoom-in;
+      border-radius: $border-radius;
+      line-height: 0;
+      color: inherit;
+      font: inherit;
+
+      &:focus-visible {
+        outline: 2px solid var(--global-link-color, #0366d6);
+        outline-offset: 2px;
+      }
+    }
+
     img {
       display: block;
       width: 100%;
       height: auto;
       object-fit: contain;
       border-radius: $border-radius;
+      pointer-events: none;
     }
   }
 
@@ -308,5 +328,72 @@
         width: span(7 of 12);
       }
     }
+  }
+}
+
+/* Award certificate lightbox (click thumb on Awards section only) */
+body.award-lightbox-open {
+  overflow: hidden;
+}
+
+.award-lightbox {
+  padding: 0;
+  border: 0;
+  max-width: none;
+  max-height: none;
+  margin: auto;
+  background: transparent;
+  color: #fff;
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.88);
+    cursor: pointer;
+  }
+}
+
+.award-lightbox__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.75rem 0.75rem 1rem;
+  box-sizing: border-box;
+}
+
+.award-lightbox__img {
+  display: block;
+  max-width: min(92vw, 1100px);
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: $border-radius;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.45);
+}
+
+.award-lightbox__close {
+  position: absolute;
+  top: 0.35rem;
+  right: 0.35rem;
+  z-index: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: $border-radius;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba(255, 255, 255, 0.22);
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
   }
 }
