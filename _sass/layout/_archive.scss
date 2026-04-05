@@ -48,12 +48,19 @@
   }
 }
 
-/* remove border*/
+/* List entry titles under single-page sections: subordinate to .page__content > h2 */
 .page__content {
 
   .archive__item-title {
     margin-top: 1em;
+    margin-bottom: 0.35em;
+    padding-bottom: 0;
     border-bottom: none;
+    font-size: $type-size-4;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.3;
+    color: var(--global-text-color);
   }
 }
 
