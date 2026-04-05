@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi, my name is **Yeonwoo Choi**. I am a Combined UG–G (Integrated B.S.–M.S.–Ph.D.) student at [DGIST](https://www.dgist.ac.kr/en/) (Daegu Gyeongbuk Institute of Science and Technology), South Korea. I work on **ROS 2**, **middleware**, and **networked robotic systems** — especially how discovery and discovery traffic behave when many robots share a wireless network.
+Hi, my name is **Yeonwoo Choi**. I am a Combined UG–G (Integrated B.S.–M.S.–Ph.D.) student at [DGIST](https://www.dgist.ac.kr/) (Daegu Gyeongbuk Institute of Science and Technology), South Korea. I work on **ROS 2**, **middleware**, and **networked robotic systems** — especially how discovery and discovery traffic behave when many robots share a wireless network.
 
 ## Research interests
 
