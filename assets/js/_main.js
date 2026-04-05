@@ -102,10 +102,15 @@ $(document).ready(function () {
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);
 
-  // Enable the sticky footer
+  // Optional body margin when a .page__footer exists (footer removed from default layout)
   var bumpIt = function () {
+    var $f = $(".page__footer");
     $("body").css("padding-bottom", "0");
-    $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
+    if ($f.length) {
+      $("body").css("margin-bottom", $f.outerHeight(true));
+    } else {
+      $("body").css("margin-bottom", "");
+    }
   }
   $(window).resize(function () {
     didResize = true;
