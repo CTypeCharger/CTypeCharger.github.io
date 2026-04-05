@@ -10,5 +10,8 @@
 </script>
 
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
+{% if page.permalink == "/" or page.url == "/" or page.url == "/index.html" %}
+<script src="{{ base_path }}/assets/js/home-section-filter.js" defer></script>
+{% endif %}
 
 {% include analytics.html %}

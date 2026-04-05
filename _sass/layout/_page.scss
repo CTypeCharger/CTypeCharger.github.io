@@ -50,21 +50,39 @@
 
 .page__content {
 
-  /* Major section titles (one-page home: direct h2, not list entry titles) */
-  > h2 {
+  /* Major section titles (one-page home: .home-intro / .home-section; other pages: direct h2) */
+  > h2,
+  > .home-intro > h2,
+  > .home-section > h2 {
     font-size: $type-size-3;
     font-weight: 700;
-    margin-top: 2.5em;
     margin-bottom: 1em;
     padding-bottom: 0.5em;
     line-height: 1.2;
     letter-spacing: -0.02em;
     color: var(--global-text-color);
     border-bottom: 2px solid var(--global-text-color);
+  }
 
-    &:first-of-type {
-      margin-top: 0.35em;
-    }
+  > h2:first-of-type {
+    margin-top: 0.35em;
+  }
+
+  > h2 ~ h2 {
+    margin-top: 2.5em;
+  }
+
+  > .home-intro > h2 {
+    margin-top: 0.35em;
+  }
+
+  > .home-section > h2 {
+    margin-top: 2.5em;
+  }
+
+  /* Single-section view: intro hidden, reduce top gap on visible panel */
+  body.home-view-filtered .page__content > .home-section:not([hidden]) > h2 {
+    margin-top: 0.35em;
   }
 
   p, li, dl {
