@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item{% if post.collection == 'awards' and post.award_image %} archive__item--award-with-badge{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection == 'awards' and post.award_image %} archive__item--award-with-badge{% endif %}{% if post.collection == 'news' %} archive__item--news{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -64,6 +64,12 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'news' %}
+          {% if post.period %}
+          <p>Published in <i>{{ post.period }}</i></p>
+          {% elsif post.date %}
+          <p>Published in <i>{{ post.date | date: "%b %Y" }}</i></p>
+          {% endif %}
         {% elsif post.period %}
           <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.period }}</p>
         {% elsif post.date %}

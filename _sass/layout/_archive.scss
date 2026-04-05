@@ -115,6 +115,27 @@
   .archive__item--award-with-badge .archive__item-title {
     margin-top: 0;
   }
+
+  /* News list: same spacing as publication-inline; meta line matches publication <p> (body text, not .page__meta) */
+  .archive--news .list__item {
+    margin-bottom: 2.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--global-border-color);
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  .archive--news .archive__item--news > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1em;
+    color: var(--global-text-color);
+    font-family: inherit;
+  }
 }
 
 .archive__item-excerpt {
