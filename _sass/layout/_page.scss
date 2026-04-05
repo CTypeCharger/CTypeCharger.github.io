@@ -105,6 +105,39 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  /*
+   * .archive is sized for the archive *layout* (#main > .archive next to sidebar).
+   * Inside single posts (e.g. one-page home), nested .archive must not re-span the grid
+   * or reserve space for a non-existent right sidebar — that misaligns h2 vs list blocks.
+   */
+  .archive {
+    @include breakpoint($medium) {
+      @include full();
+      float: none;
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @include breakpoint($large) {
+      @include full();
+      float: none;
+      width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .list__item {
+      padding-right: 0;
+    }
+  }
 }
 
 .page__hero {
