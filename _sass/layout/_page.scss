@@ -14,14 +14,6 @@
   @include breakpoint($x-large) {
     max-width: $x-large;
   }
-
-  /* Fixed sidebar is full viewport tall; short articles collapse #main and pull the
-     footer up over the profile links. Reserve viewport height so the footer sits lower. */
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    min-height: calc(100vh - #{$masthead-height} - 3rem);
-    position: relative;
-    z-index: 2;
-  }
 }
 
 .page {
