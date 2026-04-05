@@ -233,14 +233,11 @@ collections:
     output: true
     permalink: /:collection/:path/
   education:
-    output: true
-    permalink: /education/:path/
+    output: false
   news:
-    output: true
-    permalink: /news/:path/
+    output: false
   awards:
-    output: true
-    permalink: /awards/:path/
+    output: false
   research_experience:
     output: true
     permalink: /research-experience/:path/
