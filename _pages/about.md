@@ -23,4 +23,4 @@ Hi, my name is **Yeonwoo Choi**. I am a Combined UG–G (Integrated B.S.–M.S.�
 
 ## On this site
 
-[**Publications**](/publications/), [**Education**](/education/), [**News**](/news/), [**Awards**](/awards/), [**Research experience**](/research-experience/), and a short [**CV**](/cv/) overview are in the menu.
+[**Publications**](/publications/), [**Education**](/education/), [**News**](/news/), [**Awards**](/awards/), and [**Research experience**](/research-experience/) are in the menu.
