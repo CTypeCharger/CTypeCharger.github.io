@@ -1,117 +1,360 @@
-# Site
-repository: sproogen/resume-theme
-favicon: images/favicon.ico
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve -l -H localhost`. If you change this file, please restart the 
+# server process.
 
-# Content configuration version
-version: 2
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "Yeonwoo Choi"
+title_separator          : "-"
+name                     : &name "Yeonwoo Choi"
+description              : &description "Yeonwoo Choi — DGIST Combined UG–G; ROS 2, middleware, networked robotic systems."
+url                      : https://ctypecharger.github.io
+baseurl                  : ""
+repository               : "CTypeCharger/CTypeCharger.github.io"
 
-# Personal info
-name: Yeonwoo Choi
-title: DGIST Combined UG–G (Integrated B.S.–M.S.–Ph.D.)
-email: cyw040306@dgist.ac.kr
-Linkedin: https://www.linkedin.com/in/yeonwoo-choi-48b6a72b5
+# Site Author - The following control what appear as part of the author content on the side bar.
+#               If a field is blank the icon and link will not appear, otherwise it will be shown.
+#               Additional customization can be done by editing /_includes/author-profile.html
+author:
+  # Biographic information
+  avatar           : "profile.jpg"
+  name             : "Yeonwoo Choi"
+  pronouns         : # example: "she/her"  
+  bio              : "Combined UG–G (Integrated B.S.–M.S.–Ph.D.) at DGIST. Research focus: ROS 2, middleware, and networked robotic systems."
+  location         : "Daegu, South Korea"
+  employer         : "DGIST"
+  uri              : # URL
+  email            : "cyw040306@dgist.ac.kr" 
 
-# Dark Mode (true/false/never)
-darkmode: true
+  # Academic websites
+  academia         : # URL
+  arxiv            : # URL - Update with the correct link to your profile
+  googlescholar    : # URL
+  inspire-hep      : # URL
+  impactstory      : # URL
+  orcid            : # URL
+  semantic         : # URL
+  ssrn             : # URL
+  pubmed           : # URL
+  researchgate     : # URL
+  scopus           : # URL
+  zotero           : # URL
 
-# Social links
-github_username: CTypeCharger
-instagram_username: chlaaanoeydn_36
 
-# About Section
-about_profile_image: images/profile.jpg
-about_content: |
-  Hi, my name's Yeonwoo Choi and I am a Combined UG–G (Integrated B.S.–M.S.–Ph.D.) student at DGIST (Daegu Gyeongbuk Institute of Science and Technology), South Korea, focusing on ROS 2, middleware, and networked robotic systems.
+  # Repositories and software development
+  bitbucket        : # Username - Update with your username on the site
+  codepen          : # Username
+  dribbble         : # Username
+  github           : "CTypeCharger"
+  kaggle           : # Username  
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
-  I am most skilled in: <mark>ROS2</mark> and <mark>DDS</mark>
+  # Social media
+  artstation       : # Username
+  bluesky          : # Replace this with you Bluesky username
+  facebook         : # Username
+  flickr           : # Username
+  foursquare       : # Username
+  goodreads        : # Username
+  google_plus      : # Username
+  keybase          : # Username
+  instagram        : "chlaaanoeydn_36"
+  lastfm           : # Username
+  linkedin         : "yeonwoo-choi-48b6a72b5"
+  mastodon         : # URL
+  medium           : # URL
+  pinterest        : # Username
+  soundcloud       : # Username
+  steam            : # Username
+  telegram         : # URL
+  tumblr           : # Username
+  twitter          : # Username for X / Twitter
+  vine             : # Username
+  weibo            : # Username
+  wikipedia        : # Username
+  xing             : # Username
+  youtube          : # Username
+  zhihu            : # Username
 
-content:
-  - title: Education
-    layout: list
-    content:
+# Publication Category - The following the list of publication categories and their headings
+publication_category:
+  books:
+    title: 'Books'
+  manuscripts:
+    title: 'Journal Articles'    
+  conferences:
+    title: 'Conference Papers'
 
-      - layout: left
-        title: DGIST
-        sub_title: Combined UG–G
-        caption: Jan 2026 – Present
-        description: |
-          Research focus: ROS2, middleware, and wireless network for robotic systems.
+# Site Settings
+teaser                   : "landscape-trees.jpg" # in /images/ for social media previews
+breadcrumbs              : false # true, false (default)
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link             : false      #change to true to add link to talkmap on talks page
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  disqus:
+    shortname            :
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : ['name', 'email', 'url', 'message']
+  branch                 : "gh-pages" # "master", "gh-pages"
+  commitMessage          : "New comment."
+  filename               : comment-{@timestamp}
+  format                 : "yml"
+  moderation             : true
+  path                   : "_data/comments/{options.slug}"
+  requiredFields         : ['name', 'email', 'message']
+  transforms:
+    email                : "md5"
+  generatedFields:
+    date:
+      type               : "date"
+      options:
+        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+atom_feed:
+  hide                   : false     # change to true to hide the RSS feed in the footer
+  path                   : # blank (default) uses feed.xml
 
-      - layout: left
-        title: DGIST
-        sub_title: School of Undergraduate Studies
-        caption: Feb 2023 – Present
-        description: |
-          Majoring in Computer Science.
 
-  - title: News
-    layout: list
-    content:
-      - layout: left
-        title: Merit Award
-        sub_title: Undergraduate Group Research Program (UGRP)
-        caption: Jan 2026
-        description: | 
-          Received the Merit Award in the Undergraduate Group Research Program (UGRP) for the project "Development of a Personality Assessment Method Using Thermal Perception EEG."
-      - layout: left
-        title: Program Entry
-        sub_title: Combined UG–G
-        caption: Jan 2026
-        description: |
-          Started the Combined UG–G in EECS, DGIST.
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
 
-  - title: Publications
-    layout: list
-    content:
-      - layout: left
-        title: Conference
-        description: |
-          <div class="publication-entry">
-            <p class="publication-title">
-              <a href="https://netrobics2026.nws.cs.unibo.it/">Discovery Storm: Scalability Analysis of DDS and Zenoh in Large-Scale Wireless Robotic Networks</a>
-            </p>
-            <p class="publication-authors">Sanghoon Lee, <strong>Yeonwoo Choi</strong>, Jiyeong Chae, and Kyung-Joon Park</p>
-            <p class="publication-meta"><em>IEEE INFOCOM 2026 Workshop (NetRobiCS), 2026 Accepted</em></p>
-          </div>
 
-  - title: Awards
-    layout: list
-    content:
-      - layout: top-middle
-        title: Merit Award
-        sub_title: Undergraduate Group Research Program (UGRP), DGIST
-        caption: Jan 2026
+# Social Sharing
+twitter:
+  username               : &twitter
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :  # Social media default site image
+og_description           :  # Social media default site image description
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
 
-      - layout: top-middle
-        title: Encouragement Award
-        sub_title: 2025 Brain Engineering Society of Korea Summer Workshop
-        caption: Jul 2025
-        
-  - title: Research Experience
-    layout: list
-    content:
-      - layout: top-middle
-        title: CSI Lab, DGIST
-        sub_title: Undergraduate Researcher
-        caption: May 2025 - Present
-      - layout: top-middle
-        title: DGIST (UGRP)
-        sub_title: Undergraduate Group Research Program
-        caption: Mar 2025 - Present
-      - layout: top-middle
-        title: BRAIN Lab, DGIST
-        sub_title: Undergraduate Researcher
-        caption: Dec 2024 - Feb 2025
 
-# Footer
-footer_show_references: true
+# Analytics
+analytics:
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  google:
+    tracking_id          :
 
-# Build settings
-remote_theme: sproogen/resume-theme
 
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# These settings control the types of collections used by the template
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
+
+# These settings control how pages and collections are included in the site
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+
+
+# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
+
+# Outputting
+permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins
 plugins:
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
