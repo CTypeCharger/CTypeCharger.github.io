@@ -232,6 +232,18 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  education:
+    output: true
+    permalink: /education/:path/
+  news:
+    output: true
+    permalink: /news/:path/
+  awards:
+    output: true
+    permalink: /awards/:path/
+  research_experience:
+    output: true
+    permalink: /research-experience/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -289,6 +301,34 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _education
+  - scope:
+      path: ""
+      type: education
+    values:
+      layout: single
+      author_profile: true
+  # _news
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: single
+      author_profile: true
+  # _awards
+  - scope:
+      path: ""
+      type: awards
+    values:
+      layout: single
+      author_profile: true
+  # _research_experience
+  - scope:
+      path: ""
+      type: research_experience
+    values:
+      layout: single
+      author_profile: true
 
 
 # Sass/SCSS
