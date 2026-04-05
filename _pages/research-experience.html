@@ -9,5 +9,5 @@ author_profile: true
 
 {% assign sorted = site.research_experience | sort: 'date' | reverse %}
 {% for post in sorted %}
-  {% include archive-single.html %}
+  {% include archive-research-inline.html %}
 {% endfor %}

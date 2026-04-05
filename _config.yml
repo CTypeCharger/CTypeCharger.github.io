@@ -238,8 +238,7 @@ collections:
   awards:
     output: false
   research_experience:
-    output: true
-    permalink: /research-experience/:path/
+    output: false
 
 
 # These settings control how pages and collections are included in the site

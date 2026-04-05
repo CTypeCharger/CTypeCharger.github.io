@@ -1,0 +1,28 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item publication-inline">
+    <h2 class="archive__item-title" itemprop="headline">
+      <span>{{ title }}</span>
+    </h2>
+
+    {% if post.period %}
+      <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.period }}</p>
+    {% endif %}
+
+    {% assign body = post.content | strip %}
+    {% if body != "" %}
+      <div class="page__content publication-inline__body">
+        {{ post.content }}
+      </div>
+    {% elsif post.excerpt %}
+      <div class="archive__item-excerpt">{{ post.excerpt | markdownify }}</div>
+    {% endif %}
+  </article>
+</div>
