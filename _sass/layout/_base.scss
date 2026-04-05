@@ -3,6 +3,8 @@
    ========================================================================== */
 html {
   min-height: 100%;
+  /* Fixed masthead: in-page anchors (#section) scroll with headings visible */
+  scroll-padding-top: 5rem;
 }
 
 body {

@@ -1,0 +1,82 @@
+---
+layout: single
+permalink: /
+title: "About"
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+  - /publications/
+  - /education/
+  - /news/
+  - /awards/
+  - /research-experience/
+---
+
+<p>Hi, my name is <strong>Yeonwoo Choi</strong>. I am a Combined UG–G (Integrated B.S.–M.S.–Ph.D.) student at <a href="https://www.dgist.ac.kr/">DGIST</a> (Daegu Gyeongbuk Institute of Science and Technology), South Korea. I work on <strong>ROS 2</strong>, <strong>middleware</strong>, and <strong>networked robotic systems</strong> — especially how discovery and discovery traffic behave when many robots share a wireless network.</p>
+
+<h2 id="research-interests">Research interests</h2>
+<ul>
+  <li><strong>ROS 2</strong> nodes, executors, and deployment on real hardware</li>
+  <li><strong>DDS / Zenoh</strong> and scalability when the number of participants or topics grows</li>
+  <li><strong>Wireless robotic networks</strong> — latency, loss, and discovery storms at scale</li>
+</ul>
+
+<h2 id="publications">Publications</h2>
+{% if site.author.googlescholar %}
+<div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
+{% endif %}
+{% include base_path %}
+<div class="archive">
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h3>{{ category[1].title }}</h3><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-publication-inline.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-publication-inline.html %}
+  {% endfor %}
+{% endif %}
+</div>
+
+<h2 id="education">Education</h2>
+<div class="archive">
+{% assign sorted_edu = site.education | sort: 'date' | reverse %}
+{% for post in sorted_edu %}
+  {% include archive-single.html %}
+{% endfor %}
+</div>
+
+<h2 id="news">News</h2>
+<div class="archive">
+{% assign sorted_news = site.news | sort: 'date' | reverse %}
+{% for post in sorted_news %}
+  {% include archive-single.html %}
+{% endfor %}
+</div>
+
+<h2 id="awards">Awards</h2>
+<div class="archive">
+{% assign sorted_awards = site.awards | sort: 'date' | reverse %}
+{% for post in sorted_awards %}
+  {% include archive-single.html %}
+{% endfor %}
+</div>
+
+<h2 id="research">Research experience</h2>
+<div class="archive">
+{% assign sorted_rx = site.research_experience | sort: 'date' | reverse %}
+{% for post in sorted_rx %}
+  {% include archive-research-inline.html %}
+{% endfor %}
+</div>
