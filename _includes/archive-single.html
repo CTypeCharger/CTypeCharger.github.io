@@ -12,7 +12,7 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item{% if post.collection == 'news' %} list__item--news{% endif %}">
+<div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item{% if post.collection == 'awards' and post.award_image %} archive__item--award-with-badge{% endif %}{% if post.collection == 'news' %} archive__item--news{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -42,6 +42,18 @@
       <div class="archive__award-body">
     {% endif %}
 
+    {% if post.collection == 'news' %}
+    <div class="archive__news-row">
+      <div class="archive__news-date">
+        {% if post.period %}
+          <p class="page__meta archive__news-date-meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.period }}</p>
+        {% elsif post.date %}
+          <p class="page__meta archive__news-date-meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%b %Y" }}</time></p>
+        {% endif %}
+      </div>
+      <div class="archive__news-main">
+    {% endif %}
+
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'education' or post.collection == 'news' or post.collection == 'awards' %}
         {% if post.link %}
@@ -55,7 +67,13 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
+
+    {% if post.collection == 'news' %}
+      </div>
+    </div>
+    {% endif %}
     
+    {% unless post.collection == 'news' %}
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
@@ -69,6 +87,7 @@
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+    {% endunless %}
 
     {% if post.collection != 'news' %}
     {% if post.excerpt and site.read_more != 'enabled' %}

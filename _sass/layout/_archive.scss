@@ -116,7 +116,7 @@
     margin-top: 0;
   }
 
-  /* News: title matches publication “Published in …” body line (1em), bold; generous gaps between entries */
+  /* News: date column left, title right; generous gaps between entries */
   .archive > .list__item:has(.archive__item--news) {
     margin-bottom: 0;
     padding-bottom: 3.25em;
@@ -126,19 +126,51 @@
     }
   }
 
-  .archive__item--news .archive__item-title {
-    font-size: 1em;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-    line-height: 1.5;
-  }
-
-  .archive > .list__item:has(.archive__item--news):first-child .archive__item--news .archive__item-title {
+  .archive > .list__item:has(.archive__item--news):first-child .archive__news-row {
     margin-top: 1em;
   }
 
-  .archive > .list__item:has(.archive__item--news):not(:first-child) .archive__item--news .archive__item-title {
+  .archive__news-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+
+    @include breakpoint($small) {
+      gap: 1.25rem;
+    }
+  }
+
+  .archive__news-date {
+    flex: 0 0 auto;
+    min-width: 5.5rem;
+    max-width: 8rem;
+
+    @include breakpoint($small) {
+      min-width: 6.25rem;
+    }
+  }
+
+  .archive__news-date-meta {
+    margin: 0;
+    padding-top: 0.12em;
+    font-size: $type-size-6;
+    line-height: 1.4;
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
+
+  .archive__news-main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .archive__item--news .archive__item-title {
+    font-size: 1em;
+    font-weight: 700;
     margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
   }
 }
 
