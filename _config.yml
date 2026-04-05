@@ -22,7 +22,7 @@ repository               : "CTypeCharger/CTypeCharger.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "my profile.jpg"
   name             : "Yeonwoo Choi"
   pronouns         : # example: "she/her"  
   bio              : "Combined UG–G (Integrated B.S.–M.S.–Ph.D.) at DGIST."
