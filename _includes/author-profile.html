@@ -27,7 +27,13 @@
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
-      {% if author.employer %}
+      {% if author.employer_logo %}
+        <li class="author__desktop author__employer-logo">
+          <a href="{{ author.employer_url | default: 'https://www.dgist.ac.kr/' }}" rel="noopener noreferrer">
+            <img class="author__employer-logo-img" src="{{ author.employer_logo | replace: ' ', '%20' | prepend: '/images/' | prepend: base_path }}" alt="{% if author.employer %}{{ author.employer }}{% else %}DGIST{% endif %}" loading="lazy" decoding="async" />
+          </a>
+        </li>
+      {% elsif author.employer %}
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}

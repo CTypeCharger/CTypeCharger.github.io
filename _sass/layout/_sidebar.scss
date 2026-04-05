@@ -202,6 +202,24 @@
   font-size: $type-size-5;
 }
 
+.author__employer-logo {
+  margin-top: 0.25em;
+
+  a {
+    display: inline-block;
+    line-height: 0;
+    border: 0;
+  }
+}
+
+.author__employer-logo-img {
+  max-height: 2.5rem;
+  width: auto;
+  max-width: 10rem;
+  display: block;
+  object-fit: contain;
+}
+
 .sidebar .author__desktop {
   display: none;
   @media screen and (min-width: 1024px) {

@@ -27,7 +27,9 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Combined UG–G (Integrated B.S.–M.S.–Ph.D.) at DGIST."
   location         : "Daegu, South Korea"
-  employer         : "DGIST"
+  employer         : # replaced by employer_logo in sidebar
+  employer_url     : "https://www.dgist.ac.kr/"
+  employer_logo    : "dgist logo.jpg"
   uri              : # URL
   email            : "cyw040306@dgist.ac.kr" 
 
