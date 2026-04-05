@@ -13,7 +13,6 @@ redirect_from:
   - /research-experience/
 ---
 
-<div class="home-intro">
 <p>Hi, my name is <strong>Yeonwoo Choi</strong>. I am a Combined UG–G (Integrated B.S.–M.S.–Ph.D.) student at <a href="https://www.dgist.ac.kr/">DGIST</a> (Daegu Gyeongbuk Institute of Science and Technology), South Korea. I work on <strong>ROS 2</strong>, <strong>middleware</strong>, and <strong>networked robotic systems</strong> — especially how discovery and discovery traffic behave when many robots share a wireless network.</p>
 
 <h2 id="research-interests">Research interests</h2>
@@ -22,10 +21,8 @@ redirect_from:
   <li><strong>DDS / Zenoh</strong> and scalability when the number of participants or topics grows</li>
   <li><strong>Wireless robotic networks</strong> — latency, loss, and discovery storms at scale</li>
 </ul>
-</div>
 
-<section id="publications" class="home-section" aria-label="Publications">
-<h2>Publications</h2>
+<h2 id="publications">Publications</h2>
 {% if site.author.googlescholar %}
 <div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
 {% endif %}
@@ -51,44 +48,35 @@ redirect_from:
   {% endfor %}
 {% endif %}
 </div>
-</section>
 
-<section id="education" class="home-section" aria-label="Education">
-<h2>Education</h2>
+<h2 id="education">Education</h2>
 <div class="archive">
 {% assign sorted_edu = site.education | sort: 'date' | reverse %}
 {% for post in sorted_edu %}
   {% include archive-single.html %}
 {% endfor %}
 </div>
-</section>
 
-<section id="news" class="home-section" aria-label="News">
-<h2>News</h2>
+<h2 id="news">News</h2>
 <div class="archive">
 {% assign sorted_news = site.news | sort: 'date' | reverse %}
 {% for post in sorted_news %}
   {% include archive-single.html %}
 {% endfor %}
 </div>
-</section>
 
-<section id="awards" class="home-section" aria-label="Awards">
-<h2>Awards</h2>
+<h2 id="awards">Awards</h2>
 <div class="archive">
 {% assign sorted_awards = site.awards | sort: 'date' | reverse %}
 {% for post in sorted_awards %}
   {% include archive-single.html %}
 {% endfor %}
 </div>
-</section>
 
-<section id="research" class="home-section" aria-label="Research experience">
-<h2>Research experience</h2>
+<h2 id="research">Research experience</h2>
 <div class="archive">
 {% assign sorted_rx = site.research_experience | sort: 'date' | reverse %}
 {% for post in sorted_rx %}
   {% include archive-research-inline.html %}
 {% endfor %}
 </div>
-</section>
