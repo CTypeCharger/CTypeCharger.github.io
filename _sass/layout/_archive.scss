@@ -66,6 +66,27 @@
   }
 }
 
+.publication-inline {
+  margin-bottom: 2.5em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.list__item:last-child .publication-inline {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.publication-inline__body {
+  margin-top: 0.75em;
+}
+
+.publication-inline__links {
+  margin-top: 1em;
+  font-size: $type-size-6;
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
