@@ -12,5 +12,3 @@ authors:
   - Jiyeong Chae
   - Kyung-Joon Park
 ---
-
-Workshop paper on scalability of DDS and Zenoh in large-scale wireless robotic networks.
