@@ -26,11 +26,7 @@
     {% endif %}
 
     {% if post.keywords %}
-      <ul class="research-experience__keywords">
-        {% for kw in post.keywords %}
-          <li>{{ kw }}</li>
-        {% endfor %}
-      </ul>
+      <p class="research-experience__keywords">{{ post.keywords | join: ", " }}</p>
     {% endif %}
   </article>
 </div>
