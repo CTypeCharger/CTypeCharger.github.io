@@ -12,10 +12,6 @@
       <span>{{ title }}</span>
     </h2>
 
-    {% if post.collection == 'publications' %}
-      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-    {% endif %}
-
     {% if post.authors %}
       <p class="publication-inline__authors">
         {% for a in post.authors %}
@@ -29,6 +25,10 @@
           {% endif %}
         {% endfor %}
       </p>
+    {% endif %}
+
+    {% if post.collection == 'publications' %}
+      <p class="publication-inline__venue">Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
     {% endif %}
 
     {% if post.paperurl %}
