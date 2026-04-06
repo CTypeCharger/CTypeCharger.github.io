@@ -16,6 +16,14 @@
       <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.period }}</p>
     {% endif %}
 
+    {% if post.keywords %}
+      <ul class="research-experience__keywords">
+        {% for kw in post.keywords %}
+          <li>{{ kw }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     {% assign body = post.content | strip %}
     {% if body != "" %}
       <div class="page__content publication-inline__body">

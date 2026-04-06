@@ -210,6 +210,20 @@
   font-size: $type-size-6;
 }
 
+.research-experience__keywords {
+  margin: 0.4em 0 0.65em;
+  padding: 0;
+  list-style: none;
+  font-size: $type-size-6;
+  line-height: 1.45;
+  color: var(--global-text-color-light);
+
+  li {
+    margin: 0.15em 0;
+    padding: 0;
+  }
+}
+
 .archive__item-teaser {
   border-radius: $border-radius;
   overflow: hidden;
