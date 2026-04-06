@@ -12,6 +12,15 @@
       <span>{{ title }}</span>
     </h2>
 
+    {% assign body = post.content | strip %}
+    {% if body != "" %}
+      <div class="page__content publication-inline__body">
+        {{ post.content }}
+      </div>
+    {% elsif post.excerpt %}
+      <div class="archive__item-excerpt">{{ post.excerpt | markdownify }}</div>
+    {% endif %}
+
     {% if post.period %}
       <p class="page__meta"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.period }}</p>
     {% endif %}
@@ -22,15 +31,6 @@
           <li>{{ kw }}</li>
         {% endfor %}
       </ul>
-    {% endif %}
-
-    {% assign body = post.content | strip %}
-    {% if body != "" %}
-      <div class="page__content publication-inline__body">
-        {{ post.content }}
-      </div>
-    {% elsif post.excerpt %}
-      <div class="archive__item-excerpt">{{ post.excerpt | markdownify }}</div>
     {% endif %}
   </article>
 </div>
