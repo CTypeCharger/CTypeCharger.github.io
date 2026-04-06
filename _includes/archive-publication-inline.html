@@ -13,7 +13,7 @@
     </h2>
 
     {% if post.collection == 'publications' %}
-      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
     {% endif %}
 
     {% if post.authors %}
@@ -31,29 +31,8 @@
       </p>
     {% endif %}
 
-    {% assign body = post.content | strip %}
-    {% if body != "" %}
-      <div class="page__content publication-inline__body" itemprop="description">
-        {{ post.content }}
-      </div>
-    {% elsif post.excerpt %}
-      <div class="archive__item-excerpt">{{ post.excerpt | markdownify }}</div>
-    {% endif %}
-
-    {% if post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p class="publication-inline__links"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.paperurl and post.slidesurl %}
-      <p class="publication-inline__links"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.paperurl and post.bibtexurl %}
-      <p class="publication-inline__links"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.paperurl %}
+    {% if post.paperurl %}
       <p class="publication-inline__links"><a href="{{ post.paperurl }}">Paper / link</a></p>
-    {% elsif post.slidesurl and post.bibtexurl %}
-      <p class="publication-inline__links"><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.slidesurl %}
-      <p class="publication-inline__links"><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.bibtexurl %}
-      <p class="publication-inline__links"><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
   </article>
 </div>
