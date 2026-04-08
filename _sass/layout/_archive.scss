@@ -214,6 +214,7 @@
 .publication-inline__heading .archive__item-title {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 1.1em;
 }
 
 .publication-inline__authors {
@@ -226,12 +227,16 @@
   margin-top: 0.3em;
 }
 
+.publication-inline__venue-row {
+  margin-top: 0.2em;
+}
+
 .publication-inline__type-placeholder {
   visibility: hidden;
 }
 
 .publication-inline__venue {
-  margin-top: 0.2em;
+  margin-top: 0;
   margin-bottom: 0;
   font-size: $type-size-6;
 }

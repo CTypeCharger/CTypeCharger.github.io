@@ -43,9 +43,14 @@
     {% endif %}
 
     {% if post.collection == 'publications' %}
-      <p class="publication-inline__venue">
-        <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.status %}, {{ post.status }}{% endif %}
-      </p>
+      <div class="publication-inline__heading publication-inline__venue-row">
+        {% if post.publication_type %}
+          <span class="publication-inline__type publication-inline__type-placeholder" aria-hidden="true"></span>
+        {% endif %}
+        <p class="publication-inline__venue">
+          <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.status %}, {{ post.status }}{% endif %}
+        </p>
+      </div>
     {% endif %}
   </article>
 </div>
