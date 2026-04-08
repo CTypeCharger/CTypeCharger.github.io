@@ -4,7 +4,8 @@ collection: publications
 category: conferences
 publication_type: "Conference"
 date: 2026-04-01
-venue: "IEEE INFOCOM 2026 Workshop (NetRobiCS), Accepted"
+venue: "IEEE INFOCOM 2026 Workshop (NetRobiCS)"
+status: "Accepted"
 paperurl: "https://netrobics2026.nws.cs.unibo.it/"
 authors:
   - Sanghoon Lee
@@ -12,4 +13,5 @@ authors:
   - Jiyeong Chae
   - Kyung-Joon Park
 ---
+
 

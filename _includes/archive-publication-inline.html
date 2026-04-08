@@ -8,47 +8,41 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item publication-inline" itemscope itemtype="http://schema.org/ScholarlyArticle">
-    <div class="publication-inline__row">
+    <div class="publication-inline__heading">
       {% if post.publication_type %}
-        <div class="publication-inline__type-col">
-          <span class="publication-inline__type">{{ post.publication_type }}</span>
-        </div>
+        <span class="publication-inline__type">{{ post.publication_type }}</span>
       {% endif %}
 
-      <div class="publication-inline__main">
-        <h2 class="archive__item-title" itemprop="headline">
-          {% if post.paperurl %}
-            <a href="{{ post.paperurl }}">{{ title }}</a>
-          {% else %}
-            <span>{{ title }}</span>
-          {% endif %}
-        </h2>
-
-        {% if post.authors %}
-          <p class="publication-inline__authors">
-            {% for a in post.authors %}
-              {% assign author_name = a | strip %}
-              {% if forloop.first %}
-                {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
-              {% elsif forloop.last %}
-                {% if post.authors.size > 1 %} and {% endif %}{% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
-              {% else %}
-                , {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
-              {% endif %}
-            {% endfor %}
-          </p>
+      <h2 class="archive__item-title" itemprop="headline">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}">{{ title }}</a>
+        {% else %}
+          <span>{{ title }}</span>
         {% endif %}
-
-        {% if post.collection == 'publications' %}
-          <p class="publication-inline__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-        {% endif %}
-
-        {% if post.status %}
-          <p class="publication-inline__status">{{ post.status }}</p>
-        {% endif %}
-      </div>
+      </h2>
     </div>
+
+    {% if post.authors %}
+      <p class="publication-inline__authors">
+        {% for a in post.authors %}
+          {% assign author_name = a | strip %}
+          {% if forloop.first %}
+            {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
+          {% elsif forloop.last %}
+            {% if post.authors.size > 1 %} and {% endif %}{% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
+          {% else %}
+            , {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
+          {% endif %}
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    {% if post.collection == 'publications' %}
+      <p class="publication-inline__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    {% endif %}
+
+    {% if post.status %}
+      <p class="publication-inline__status">{{ post.status }}</p>
+    {% endif %}
   </article>
 </div>
-
-
