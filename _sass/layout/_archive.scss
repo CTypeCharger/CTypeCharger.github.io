@@ -217,9 +217,17 @@
 }
 
 .publication-inline__authors {
-  margin-top: 0.3em;
+  margin-top: 0;
   margin-bottom: 0;
   font-size: $type-size-6;
+}
+
+.publication-inline__authors-row {
+  margin-top: 0.3em;
+}
+
+.publication-inline__type-placeholder {
+  visibility: hidden;
 }
 
 .publication-inline__venue {

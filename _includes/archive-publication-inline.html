@@ -23,18 +23,23 @@
     </div>
 
     {% if post.authors %}
-      <p class="publication-inline__authors">
-        {% for a in post.authors %}
-          {% assign author_name = a | strip %}
-          {% if forloop.first %}
-            {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
-          {% elsif forloop.last %}
-            {% if post.authors.size > 1 %} and {% endif %}{% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
-          {% else %}
-            , {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
-          {% endif %}
-        {% endfor %}
-      </p>
+      <div class="publication-inline__heading publication-inline__authors-row">
+        {% if post.publication_type %}
+          <span class="publication-inline__type publication-inline__type-placeholder" aria-hidden="true"></span>
+        {% endif %}
+        <p class="publication-inline__authors">
+          {% for a in post.authors %}
+            {% assign author_name = a | strip %}
+            {% if forloop.first %}
+              {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
+            {% elsif forloop.last %}
+              {% if post.authors.size > 1 %} and {% endif %}{% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
+            {% else %}
+              , {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
+            {% endif %}
+          {% endfor %}
+        </p>
+      </div>
     {% endif %}
 
     {% if post.collection == 'publications' %}
