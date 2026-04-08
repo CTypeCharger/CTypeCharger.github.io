@@ -154,9 +154,9 @@
   .archive__news-date-meta {
     margin: 0;
     padding-top: 0.12em;
-    font-size: $type-size-6;
+    font-size: $type-size-5;
     line-height: 1.4;
-    color: var(--global-text-color-light);
+    color: var(--global-text-color);
     white-space: nowrap;
   }
 
@@ -206,7 +206,7 @@
   flex: 0 0 auto;
   min-width: 5.75rem;
   margin: 0;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   font-weight: 600;
   line-height: 1.35;
 }
@@ -228,7 +228,7 @@
 }
 
 .publication-inline__venue-row {
-  margin-top: 0.1em;
+  margin-top: 0.05em;
 }
 
 .publication-inline__type-placeholder {
@@ -243,12 +243,16 @@
 
 .publication-inline__body {
   margin-top: 0.5em;
+
+  p {
+    margin: 0;
+  }
 }
 
 /* Research experience: tighten role/date spacing and unify date color */
 .publication-inline__body + .page__meta {
-  margin-top: 0.1em;
-  margin-bottom: 0.35em;
+  margin-top: 0.02em;
+  margin-bottom: 0.25em;
   color: var(--global-text-color);
 }
 .research-experience__keywords {
@@ -256,7 +260,7 @@
   padding: 0;
   font-size: $type-size-6;
   line-height: 1.45;
-  color: var(--global-text-color-light);
+  color: var(--global-text-color);
 }
 
 .archive__item-teaser {
@@ -297,6 +301,7 @@
 
   .page__meta {
     margin: 0 0 4px;
+    color: var(--global-text-color);
   }
 }
 
