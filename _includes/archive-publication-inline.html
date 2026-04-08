@@ -38,11 +38,9 @@
     {% endif %}
 
     {% if post.collection == 'publications' %}
-      <p class="publication-inline__venue"><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
-    {% endif %}
-
-    {% if post.status %}
-      <p class="publication-inline__status">{{ post.status }}</p>
+      <p class="publication-inline__venue">
+        <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.status %}, {{ post.status }}{% endif %}
+      </p>
     {% endif %}
   </article>
 </div>

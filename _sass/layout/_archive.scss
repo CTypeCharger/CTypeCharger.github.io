@@ -184,8 +184,8 @@
 }
 
 .publication-inline {
-  margin-bottom: 2.5em;
-  padding-bottom: 2em;
+  margin-bottom: 1.25em;
+  padding-bottom: 1em;
   border-bottom: 1px solid var(--global-border-color);
 }
 
@@ -223,12 +223,6 @@
 }
 
 .publication-inline__venue {
-  margin-top: 0.2em;
-  margin-bottom: 0;
-  font-size: $type-size-6;
-}
-
-.publication-inline__status {
   margin-top: 0.2em;
   margin-bottom: 0;
   font-size: $type-size-6;
