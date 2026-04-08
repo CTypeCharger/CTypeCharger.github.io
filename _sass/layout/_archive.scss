@@ -211,6 +211,12 @@
   margin-top: 0.75em;
 }
 
+.publication-inline__status {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+  font-size: $type-size-6;
+}
+
 .publication-inline__links {
   margin-top: 1em;
   font-size: $type-size-6;
@@ -468,3 +474,4 @@ body.award-lightbox-open {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
   }
 }
+
