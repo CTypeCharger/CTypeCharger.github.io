@@ -195,21 +195,38 @@
   padding-bottom: 0;
 }
 
+.publication-inline__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+
+.publication-inline__type-col {
+  flex: 0 0 auto;
+  min-width: 5.75rem;
+}
+
 .publication-inline__type {
+  display: inline-block;
   margin-top: 0.35em;
   margin-bottom: 0;
   font-size: $type-size-6;
   font-weight: 600;
 }
 
+.publication-inline__main {
+  flex: 1;
+  min-width: 0;
+}
+
 .publication-inline__authors {
-  margin-top: 0.35em;
+  margin-top: 0.3em;
   margin-bottom: 0;
   font-size: $type-size-6;
 }
 
 .publication-inline__venue {
-  margin-top: 0.25em;
+  margin-top: 0.2em;
   margin-bottom: 0;
   font-size: $type-size-6;
 }
@@ -221,11 +238,6 @@
 .publication-inline__status {
   margin-top: 0.2em;
   margin-bottom: 0;
-  font-size: $type-size-6;
-}
-
-.publication-inline__links {
-  margin-top: 1em;
   font-size: $type-size-6;
 }
 
