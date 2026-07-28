@@ -5,7 +5,7 @@ category: conferences
 publication_type: "Conference"
 date: 2026-04-01
 venue: "IEEE INFOCOM 2026 Workshop (NetRobiCS)"
-status: "Accepted"
+status: "Published"
 paperurl: "https://ieeexplore.ieee.org/abstract/document/11571268"
 authors:
   - Sanghoon Lee
