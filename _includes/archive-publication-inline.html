@@ -41,16 +41,6 @@
           {% endfor %}
         </p>
       </div>
-      {% if post.equal_contributors %}
-        <div class="publication-inline__heading publication-inline__authors-row">
-          {% if post.publication_type %}
-            <span class="publication-inline__type publication-inline__type-placeholder" aria-hidden="true"></span>
-          {% endif %}
-          <p class="publication-inline__authors">
-            <small><sup>&dagger;</sup> Equal contribution.</small>
-          </p>
-        </div>
-      {% endif %}
     {% endif %}
 
     {% if post.collection == 'publications' %}
