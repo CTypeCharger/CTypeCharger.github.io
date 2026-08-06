@@ -37,9 +37,20 @@
             {% else %}
               , {% if author_name == site.author.name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}
             {% endif %}
+            {% if post.equal_contributors contains author_name %}<sup>&dagger;</sup>{% endif %}
           {% endfor %}
         </p>
       </div>
+      {% if post.equal_contributors %}
+        <div class="publication-inline__heading publication-inline__authors-row">
+          {% if post.publication_type %}
+            <span class="publication-inline__type publication-inline__type-placeholder" aria-hidden="true"></span>
+          {% endif %}
+          <p class="publication-inline__authors">
+            <small><sup>&dagger;</sup> Equal contribution.</small>
+          </p>
+        </div>
+      {% endif %}
     {% endif %}
 
     {% if post.collection == 'publications' %}
