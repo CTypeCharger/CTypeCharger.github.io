@@ -5,7 +5,7 @@ category: conferences
 publication_type: "Conference"
 date: 2027-01-01
 venue: "IEEE INFOCOM 2027"
-status: "Under Review"
+status: "Under review"
 authors:
   - Yeonwoo Choi
   - Sanghoon Lee
