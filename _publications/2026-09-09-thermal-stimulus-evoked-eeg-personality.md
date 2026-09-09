@@ -5,7 +5,7 @@ category: manuscripts
 publication_type: "Journal"
 date: 2026-09-09
 venue: "Biological Psychology"
-status: "Submitted"
+status: "Under review"
 authors:
   - Suyeon Cho
   - Yeonwoo Choi
