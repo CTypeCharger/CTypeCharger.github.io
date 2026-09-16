@@ -6,6 +6,7 @@ publication_type: "Conference"
 date: 2027-01-01
 venue: "IEEE INFOCOM 2027"
 status: "Under review"
+paperurl: "https://arxiv.org/abs/2608.02242"
 authors:
   - Yeonwoo Choi
   - Sanghoon Lee
