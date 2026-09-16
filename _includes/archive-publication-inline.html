@@ -49,10 +49,10 @@
           <span class="publication-inline__type publication-inline__type-placeholder" aria-hidden="true"></span>
         {% endif %}
         <p class="publication-inline__venue">
-          {% if post.status == "Published" %}
-            <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}, {{ post.status }}
-          {% else %}
+          {% if post.status == "Under review" %}
             <i>{{ post.venue }}</i>, Under review
+          {% else %}
+            <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.status %}, {{ post.status }}{% endif %}
           {% endif %}
         </p>
       </div>
